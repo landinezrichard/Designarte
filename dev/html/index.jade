@@ -8,6 +8,20 @@ html(lang="es")
 		link(rel="stylesheet", type="text/css", href="../css/estilos.css")
 	body
 		include ../components/Header/template.jade
+		div.bg-main
+			div.u-centrar
+				div.Miga
+					|	Estas aquí:
+					a(href="")
+						|	Miga de pan
+					|	 → 
+					a(href="")
+						|	Miga de pan
+				div.Txt-intro
+					p.Txt-introP
+						|	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eius in cum maiores aperiam error, aliquid ipsam aliquam cumque! Iusto quae debitis nostrum itaque sint iste in, impedit aut recusandae!
+				include ../components/Filtro/template.jade
+				include ../components/Productos/template.jade
 			//- include ../components/Footer/template.jade
 		// build:js ../js/combined.js
 		//- script("text/javascript", src="../js/jquery-2.2.1.min.js")

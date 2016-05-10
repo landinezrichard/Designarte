@@ -1,0 +1,62 @@
+/*PRODUCTOS*/
+
+.Productos
+	display inline-block
+	float right
+	width 700px
+	padding-left 48px
+	height auto
+	margin 25px 0
+
+	&-item
+		display inline-block
+		position relative
+		width 238px
+		text-align center
+		background $white
+		margin 0 12px 50px
+		
+	&-link
+		cursor pointer
+		
+	&-title
+		font-family 'corbelregular'
+		font-weight 400
+		font-size 1.12em
+		color $gray2
+		min-height 2em
+		margin 0
+		border-top 1px solid $light_gray
+	&-precio
+		margin 0
+		color $ocre
+		font-family 'lobster_1.4regular'
+		font-weight 400
+		font-size 1.87em
+		
+	&-btn
+		font-family 'lobster_1.4regular'
+		font-weight 400
+		font-size 1.56em
+		color $white
+		display inline-block
+		width 111px
+		height 43px
+		line-height 43px
+		box-shadow 0px 16px 60px -15px rgba(0,0,0,3)
+		
+		&:nth-child(2)
+			background $pink
+			float left
+			
+		&:last-child
+			background $green
+			float right
+			
+	&-flag
+		position absolute
+		top 0
+		left 0
+		display inline-block
+		width 85px
+		height 85px
