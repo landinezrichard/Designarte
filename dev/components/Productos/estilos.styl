@@ -3,28 +3,34 @@
 .Productos
 	display inline-block
 	float right
-	width 700px
-	padding-left 48px
+	width 780px
+	// padding-left 15px
 	height auto
 	margin 25px 0
 
 	&-item
 		display inline-block
 		position relative
-		width 238px
+		max-width 236px
+		width 30%
 		text-align center
 		background $white
-		margin 0 12px 50px
+		margin 0 1.5% 50px
+		vertical-align top
 		
 	&-link
 		cursor pointer
+		
+	&-img
+		max-width 236px
+		max-height 236px
 		
 	&-title
 		font-family 'corbelregular'
 		font-weight 400
 		font-size 1.12em
 		color $gray2
-		min-height 2em
+		min-height 2.81em
 		margin 0
 		border-top 1px solid $light_gray
 	&-precio
@@ -49,7 +55,7 @@
 			background $pink
 			float left
 			
-		&:last-child
+		&:nth-child(3)
 			background $green
 			float right
 			
