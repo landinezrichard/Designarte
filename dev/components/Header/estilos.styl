@@ -18,18 +18,15 @@
 	
 	&-izq
 		float left
-		display inline-block
-		// width 38%
 		
 	&-der
 		float right
-		display inline-block
 		text-align right
-		// width 38%
-			
+
 	&-izq
 	&-der
-		width 125px
+		display inline-block
+		width 128px
 		
 	&-menuMovil
 		display inline-block
@@ -42,6 +39,7 @@
 		cursor pointer
 		width 30px
 		margin 0 5px
+		position relative
 		
 	&-btnMovil--small
 		display inline-block
@@ -81,7 +79,7 @@
 
 	&-btn
 		cursor pointer
-		margin-left 5px
+		margin 0 15px		
 		font-family 'pathway_gothic_oneregular'
 		font-size 1.25em
 		font-weight 400
@@ -130,50 +128,18 @@
 		text-indent -9999px
 		margin 0
 		
-	&-busqRed
-		float left
-		margin-top -70px
-		// 
-		display none
-		
-	&-form
-		display inline-block
-		float left
-
-	&-label
-		font-family 'lobster_1.4regular'
-		color $gray
-		font-size 1.56em
-		vertical-align middle
-		
-	&-input
-		width 224px
-		font-size 1.12em
-		font-family 'corbelitalic'
-		margin-left 5px
-		padding .2em
-		vertical-align middle
-		border none
-		border 1px solid $light_gray
-		height 35px
-		box-sizing border-box
-	&-formBtn
-		cursor pointer
-		display inline-block
-		width 59px
-		height 35px
-		vertical-align middle
-		
-	&-redes
-		display inline-block
-		float right
-	&-red
-		cursor pointer
-		display inline-block
-		width 36px
-		height 30px
-		vertical-align middle
-		margin 0 5px
+	&-alerta
+		width 20px
+		height 20px
+		position absolute
+		top 4px
+		right 0
+		background $green
+		color $white
+		border-radius 50%
+		font-size 0.81em
+		line-height 20px		
+	
 /*Tablet Portrait*/
 // @media screen and (min-width:725px)
 	// .Header
@@ -191,10 +157,10 @@
 		& > .u-centrar
 			line-height inherit
 		
-		&-izq			
+		&-izq
 			width 407px
 			
-		&-der			
+		&-der
 			width 407px
 			text-align center
 			
@@ -238,3 +204,7 @@
 			background-repeat no-repeat
 			background-size 100% 100%
 			float left
+			
+		&-btn
+			margin 0
+			margin-left 5px

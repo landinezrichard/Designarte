@@ -1,0 +1,87 @@
+/*BUSCAR Y REDES*/
+
+.Buscar
+	width 100%
+	text-align center
+	margin-top 64px
+	
+	&-busqRed	
+		margin 10px 0 20px
+
+	&-izq
+	&-der
+		display inline-block
+		width 100%
+		
+	&-redes
+		display inline-block
+				
+	&-red
+		cursor pointer
+		display inline-block
+		width 36px
+		height 30px
+		vertical-align middle
+		margin 0 5px
+		
+	&-form
+		display inline-block		
+
+	&-label
+		font-family 'lobster_1.4regular'
+		color $gray
+		font-size 1.56em
+		vertical-align middle
+		display inline-block
+		width 100%
+		
+	&-input
+		width 224px
+		font-size 1.12em
+		font-family 'corbelitalic'
+		margin-left 5px
+		padding .2em
+		vertical-align middle
+		border none
+		border 1px solid $light_gray
+		height 35px
+		box-sizing border-box
+	&-formBtn
+		cursor pointer
+		display inline-block
+		width 59px
+		height 35px
+		vertical-align middle
+
+@media screen and (min-width:700px)
+	.Buscar
+		&-izq
+		&-der			
+			width 50%
+			
+		&-izq
+			float left
+		&-der
+			float right
+
+@media screen and (min-width:1050px)
+	.Buscar
+		margin-top -70px
+		
+		&-izq
+			float left
+			width 407px
+			
+		&-der
+			float right
+			text-align venter
+			width 407px
+			
+		&-form
+			float left
+			
+		&-redes
+			float right
+			
+		&-label
+			width auto
