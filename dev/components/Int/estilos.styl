@@ -1,0 +1,186 @@
+/*INTERNA PRODUCTO*/
+
+.Int
+	display inline-block
+	width 100%
+	background $white
+	
+	&-volver
+		display inline-block
+		width 100%
+		
+	&-volverBtn
+		cursor pointer
+		font-family 'lobster_1.4regular'
+		display inline-block
+		float right
+		color $gray2
+		font-size 1.56em
+		margin .4em
+		width 90px
+		
+	&-volverBtn:before
+		content ""
+		width 14px
+		height 20px
+		display inline-block
+		background url('../images/02-interna/flecha-izq.png') 50% no-repeat
+		
+	&-title
+		font-family 'lobster_1.4regular'
+		font-size 1.67em
+		color $fucsia3
+		margin .5em 1em
+		font-weight 400
+		
+	&-subTitle
+		font-family 'lobster_1.4regular'
+		font-size 1.56em
+		color $ocre
+		margin-bottom 0
+		font-weight 400
+		
+	&-desc
+		font-family 'corbelitalic'
+		color $gray2
+		font-size 1.12em
+		margin 0
+		
+	&-precio
+		font-family 'lobster_1.4regular'
+		font-size 1.87em
+		color $ocre
+		margin .5em 0
+		
+	&-caract
+		display table
+		width 100%
+		
+	&-carTitle
+		font-family 'lobster_1.4regular'
+		font-size 1.56em
+		color $black
+		display table-cell
+		width 30%	
+		
+	&-carDesc
+		font-family 'corbelitalic'
+		color $gray2
+		font-size 1.12em
+		
+	&-canTxt
+		font-family 'lobster_1.4regular'
+		font-size 1.56em
+		color $black
+		vertical-align middle
+
+	&-izq
+	&-der
+		display inline-block
+		
+	&-imgBig
+		vertical-align middle
+		
+	&-galeria
+		display inline-block
+		margin 0
+		padding 0
+		list-style none
+		width 80%
+	&-item
+		display inline-block
+		
+	&-agrega
+		display inline-block
+		margin 15px 0
+		text-align left
+		
+		
+	&-cantidad
+		width 40px
+		height 37px
+		margin 0 5px
+		vertical-align middle
+		
+	&-btnAgrega
+		cursor pointer
+		display inline-block
+		background $fucsia3
+		width 180px
+		height 43px
+		line-height 43px
+		vertical-align middle
+		color $white
+		font-family 'lobster_1.4regular'
+		font-size 1.36em
+		text-align center
+		margin 0 5px
+		
+	&-redes
+		display inline-block
+		width 100%
+		margin 10px 0
+	&-red
+		display inline-block
+		width 170px
+		height 33px
+		line-height 33px
+		font-family 'lobster_1.4regular'
+		font-size 1.36em
+		color $white
+		background $light_gray3
+		margin 10px 15px
+		
+	&-redTxt
+		vertical-align middle
+		
+	&-redImg
+		margin 0 10px
+		vertical-align middle
+		
+@media screen and (min-width:700px)
+	.Int
+		&-izq
+		&-der
+			width 50%
+			float left
+			
+		&-der
+			text-align left
+			min-height 393px
+		&-agrega
+			float left
+@media screen and (min-width:1050px)
+	.Int
+		&-title
+			font-size 1.87em
+			margin .5em 1em 1em
+
+		&-izq
+		&-der
+			width 50%
+			float left
+			
+		&-der
+			text-align left
+			min-height 393px
+			
+		&-agrega		
+			width 50%
+			float left
+			margin 25px 0
+			
+		&-cantidad
+			width 70px
+			margin 0 15px
+			
+		&-btnAgrega
+			width 232px
+			font-size 1.56em
+			margin 0 15px
+		&-redes
+			margin 20px 0
+			
+		&-red		
+			width 180px
+			font-size 1.56em
