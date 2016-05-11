@@ -3,7 +3,7 @@
 .Productos
 	display inline-block
 	float right
-	width 780px
+	width 100%
 	// padding-left 15px
 	height auto
 	margin 25px 0
@@ -12,10 +12,10 @@
 		display inline-block
 		position relative
 		max-width 236px
-		width 30%
+		width 100%
 		text-align center
 		background $white
-		margin 0 1.5% 50px
+		margin 0 1.5% 25px
 		vertical-align top
 		
 	&-link
@@ -28,7 +28,7 @@
 	&-title
 		font-family 'corbelregular'
 		font-weight 400
-		font-size 1.12em
+		font-size 1em
 		color $gray2
 		min-height 2.81em
 		margin 0
@@ -38,12 +38,12 @@
 		color $ocre
 		font-family 'lobster_1.4regular'
 		font-weight 400
-		font-size 1.87em
+		font-size 1.67em
 		
 	&-btn
 		font-family 'lobster_1.4regular'
 		font-weight 400
-		font-size 1.56em
+		font-size 1.36em
 		color $white
 		display inline-block
 		width 111px
@@ -66,3 +66,20 @@
 		display inline-block
 		width 85px
 		height 85px
+		
+@media screen and (min-width:1050px)
+	.Productos	
+		width 780px
+		
+		&-item			
+			width 30%
+			margin 0 1.5% 50px
+			
+		&-title		
+			font-size 1.12em
+			
+		&-precio
+			font-size 1.87em
+			
+		&-btn
+			font-size 1.56em

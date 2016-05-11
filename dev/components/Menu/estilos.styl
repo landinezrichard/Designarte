@@ -1,0 +1,42 @@
+/*MENU MOVIL*/
+
+.Menu
+	display none
+	width 100%
+	height 80vh
+	background $pink
+	position fixed
+	top 64px
+	left 0
+	right 0
+	z-index 16
+	overflow-y auto
+
+	&-list
+		display inline-block
+		width 100%
+		list-style none
+		padding 0
+		margin 0
+	&-item
+		width 100%
+		height 40px
+		line-height 40px
+		border-bottom 1px solid $white
+		
+		&:hover
+			.Menu-link
+				color $ocre2
+
+	&-link
+		display inline-block
+		width 100%
+		height 100%
+		font-family 'lobster_1.4regular'
+		color $white
+		cursor pointer
+		font size 1.25em
+		
+@media screen and (min-width:1050px)
+	.Menu
+		display none !important

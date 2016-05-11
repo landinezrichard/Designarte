@@ -18,16 +18,15 @@
 		margin 0 auto
 		
 	&-form
-		max-width 416px
-		display inline-block
-		float left
-		text-align right
+		max-width 700px
+		display inline-block		
+		text-align center
+		width 100%
 		
 	&-title
 		color $ocre
 		font-weight 400
-		font-family 'lobster_1.4regular'
-		text-align left
+		font-family 'lobster_1.4regular'		
 		font-size 1.75em
 		margin 0 0 .4em
 		
@@ -41,18 +40,20 @@
 		font-weight 700
 		font-size 1.06em
 		vertical-align top
+		display inline-block
+		width 100%
 		
 	&-input
 		background $beige
 		border none
-		width 310px
+		width 95%
 		height 20px
 		padding .2em
 		
 	&-textarea
 		background $beige
 		border none
-		width 248px
+		width 85%
 		height 58px
 		resize none
 		vertical-align middle
@@ -67,8 +68,7 @@
 		width 60px
 		height 58px
 		line-height 58px
-		text-align center
-		float right
+		text-align center		
 		font-weight 400
 		font-family 'lobster_1.4regular'
 		font-size 1.06em
@@ -79,13 +79,13 @@
 		width 190px
 		height 184px
 		margin 0 5px
-		float left
+		
 		
 	&-opi
 		display inline-block
-		width 355px
-		margin-left 15px
-		float left
+		width 80%
+		margin 0 5%
+		
 		
 	&-opitxt
 		font-family 'archivo_narrowregular'
@@ -102,9 +102,7 @@
 		font-weight 700
 		
 	&-menu
-		display inline-block
-		width 100%
-		margin 15px 0
+		display none		
 		
 	&-list
 		// display inline-block
@@ -140,15 +138,13 @@
 		border-bottom 1px solid $light_gray
 		
 	&-tel
-		cursor pointer
-		margin-left 5px
+		cursor pointer		
 		font-family 'pathway_gothic_oneregular'
 		font-size 1.12em
 		font-weight 400
 		color $gray3
 		display inline-block
-		margin 0 40px
-		
+		margin 10px 40px
 		
 	&-icon
 		width 23px
@@ -160,8 +156,7 @@
 		
 	&-copy
 		display inline-block
-		width 100%
-		margin-bottom 55px
+		width 100%		
 	&-copyText
 		font-family 'pathway_gothic_oneregular'
 		font-weight 400
@@ -171,10 +166,71 @@
 		color $fucsia
 		cursor pointer
 		font-weight 700
-// @media screen and (min-width:840px)		
-	// .Footer		
+@media screen and (min-width:700px)
+	.Footer
+		&-label
+			width 28%
+			float left	
+			
+		&-input
+			width 70%
+			float left
+			
+		&-textarea
+			width 60%
+			float left
+			
+		&-btn
+			float left
+			width 10%
+			
+		&-opi			
+			width 355px
+			margin 0
+			margin-left 15px
 	
 /*Tablet Landscape*/
-// @media screen and (min-width:1024px)
-	// .Footer		
-	
+@media screen and (min-width:1050px)
+	.Footer
+		&-form		
+			text-align right
+			float left
+			max-width 416px
+			width auto
+		&-title
+			text-align left
+		&-label
+			width auto
+			float none
+			
+		&-btn
+			float right
+			width 60px
+			height 58px
+			
+		&-input
+			width 310px
+			float none
+			
+		&-textarea
+			width 248px
+			float none
+			
+		&-imgC			
+			float left
+			
+		&-opi
+			width 355px
+			margin-left 15px
+			float left
+			
+		&-menu
+			display inline-block
+			width 100%
+			margin 15px 0
+			
+		&-tel			
+			margin 0 40px
+			
+		&-copy		
+			margin-bottom 55px

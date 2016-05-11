@@ -5,7 +5,7 @@ $(document).ready(function() {
 	var menus = ['.Menu','.Header-contactoMovil'];
 
 	/*Mostrar menu mobile*/
-	$('.Header-mobileMenu').click(function(event){
+	$('.Header-mainMenu').click(function(event){
 		event.preventDefault();
 		mostrarOcultar('.Menu');
 	});
