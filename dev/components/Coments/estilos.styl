@@ -5,12 +5,118 @@
 	width 100%
 	background $white
 	margin-top 4px
+	padding-bottom 10px
 	
 	&-form
-	
+		display inline-block
+		text-align left
+		
+	&-title
+		font-family 'lobster_1.4regular'
+		font-size 1.67em
+		color $fucsia3
+		margin .5em 1em
+		font-weight 400
+		text-align center
+		
+	&-field
+		border none
+		padding .1em .625em
+		
+	&-label
+		font-family 'lobster_1.4regular'
+		font-size 1.56em
+		color $ocre
+		margin-bottom 0
+		font-weight 400
+		display inline-block
+		width 100%
+		
+	&-input
+	&-textarea
+		width 98%
+		border none
+		border 1px solid $light_gray4
+		padding .2em
+	&-textarea
+		height 110px
+		resize none
+		
+	&-btn
+		cursor pointer
+		display inline-block
+		background $fucsia3
+		width 180px
+		height 43px
+		line-height 43px
+		vertical-align middle
+		color $white
+		font-family 'lobster_1.4regular'
+		font-size 1.36em
+		text-align center
+		float right
+		margin 10px 0
+		box-shadow 0px 12px 20px -7px rgba(0,0,0,0.4)
+		
+	&-item
+		display inline-block
+		text-align left
+		width 90%
+		border-bottom 1px dashed $light_gray2
+		
+	&-autor
+		font-family 'lobster_1.4regular'
+		font-size 1.56em
+		color $ocre
+		margin-bottom 0
+		font-weight 400
+		display inline-block
+		width 100%
+		margin 0
+		
+	&-desc
+		font-family 'corbelitalic'
+		color $gray2
+		font-size 1.12em
+		margin 0 0 1em
+		
+	&-ver
+		display inline-block
+		width 100%
+		text-align center
+		margin 10px 0
+	&-verBtn
+		cursor pointer
+		color $green
+		font-family 'corbelitalic'
+		font-size 1.12em
+		
+		&:after
+			content ""
+			width 18px
+			height 18px
+			display inline-block
+			background url('../images/02-interna/flecha_green-down.png') 50% no-repeat
+			margin-left 5px
+		
 @media screen and (min-width:1050px)
 	.Coments
 		&-form
-		&-all
-			width 50%
+			width 40%
 			float left
+		&-all
+			width 60%
+			float left
+			padding-left 10px
+			box-sizing border-box			
+		
+		&-title
+			font-size 1.87em
+			margin .5em 1em 1em
+		
+		&-btn
+			width 232px
+			font-size 1.56em
+			
+		&-item
+			width auto
