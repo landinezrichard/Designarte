@@ -1,0 +1,30 @@
+/*PAGINADOR*/
+
+.Paginador	
+	display inline-block
+	text-align center
+		
+	&-nav
+		display inline-block
+		list-style none
+		margin 0
+		padding 0
+
+	&-item
+		cursor pointer
+		display inline-block
+		border-radius 50%
+		width 15px
+		height 15px
+		margin 3px
+		background $light_gray
+		
+		&.active
+			background $green
+		
+	&-pnBtn
+		cursor pointer
+		
+		&.deactivated
+			opacity 0.2
+			cursor default

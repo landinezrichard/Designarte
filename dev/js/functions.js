@@ -24,5 +24,24 @@ $(document).ready(function() {
 		}
 		$(elemento).slideToggle();
 	}
+
+	/*Paginador*/	
+	var p = $('#paginador').paginator({
+        pageTransform: "slide"
+    });
+
+	$('.Paginador-nav').on('click','.Paginador-item',function(){
+		$('.Paginador-item').removeClass('active');
+		var pagina = $(this).attr('data-page');
+		$(this).addClass('active');
+		p.setCurrentPage(pagina - 1);
+	});
+
+	p.on('pageChanged', function (idx) {
+		var valor = idx + 1;
+		$('.Paginador-item').removeClass('active');
+        $('.Paginador-item[data-page='+valor+']').addClass('active');
+    });
+
 	
 });
