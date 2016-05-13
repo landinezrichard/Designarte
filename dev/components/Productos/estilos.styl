@@ -3,8 +3,7 @@
 .Productos
 	display inline-block
 	float right
-	width 100%
-	// padding-left 15px
+	width 100%	
 	height auto
 	margin 25px 0
 	
@@ -81,14 +80,20 @@
 /*dots*/
 .Productos-otrosList.owl-carousel .owl-controls .owl-pagination
 	text-align center
+
+.Productos-otrosList.owl-carousel .owl-controls.clickable .owl-pagination .owl-page
+	display inline-block
 	
-.Productos-otrosList.owl-carousel .owl-controls .owl-pagination owl-page
+.Productos-otrosList.owl-carousel .owl-controls.clickable .owl-pagination .owl-page span
 	display inline-block
 	border-radius 50%
 	width 15px
 	height 15px
 	margin 3px
 	background $light_gray
+	
+.Productos-otrosList.owl-carousel .owl-controls.clickable .owl-pagination .owl-page.active span	
+	background $green
 
 
 /*prev-next buttons*/

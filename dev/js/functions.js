@@ -50,6 +50,7 @@ $(document).ready(function() {
 	var sync2 = $("#sync2");
      
 	sync1.owlCarousel({
+		items : 1,
 		singleItem : true,
 		slideSpeed : 1000,
 		navigation: false,
@@ -138,6 +139,12 @@ $(document).ready(function() {
 
 	$.each($('.owl-next'),function(elemento){
 		$(this).html(arrow_der);
-	});	
+	});
+
+	/*Acordeon Filtro*/
+
+	$('.Filtro-catTitle').click(function(){
+		$(this).next().fadeToggle();
+	});
 	
 });
