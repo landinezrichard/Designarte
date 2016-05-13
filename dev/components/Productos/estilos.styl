@@ -75,6 +75,37 @@
 	&-otrosList
 		display inline-block
 		width 100%
+		
+/*Controles Owl Galeria*/
+
+/*dots*/
+.Productos-otrosList.owl-carousel .owl-controls .owl-pagination
+	text-align center
+	
+.Productos-otrosList.owl-carousel .owl-controls .owl-pagination owl-page
+	display inline-block
+	border-radius 50%
+	width 15px
+	height 15px
+	margin 3px
+	background $light_gray
+
+
+/*prev-next buttons*/
+.Productos-otrosList.owl-carousel .owl-controls .owl-buttons .owl-prev
+.Productos-otrosList.owl-carousel .owl-controls .owl-buttons .owl-next	
+	display inline-block
+	width 32px
+	height 32px
+	cursor pointer
+	margin 5px
+
+
+.Productos-otrosList.owl-carousel .owl-controls .owl-buttons .owl-prev	
+	background url('../images/01-index/btn-prev.jpg') no-repeat center
+
+.Productos-otrosList.owl-carousel .owl-controls .owl-buttons .owl-next	
+	background url('../images/01-index/btn-next.jpg') no-repeat center
     
 @media screen and (min-width:1050px)
 	.Productos	
@@ -95,6 +126,6 @@
 			
 		&-otrosList
 			& .Productos-item
-				width 22%
+				width 236px
 				margin 0 12px 50px
 				

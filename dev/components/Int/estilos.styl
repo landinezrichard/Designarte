@@ -78,11 +78,15 @@
 	&-der
 		display inline-block
 		
+	&-big
+		display inline-block
+		width 100%
+		
 	&-imgBig
 		vertical-align middle
 		
 	&-galeria
-		display inline-block
+		display inline-block !important
 		margin 0
 		padding 0
 		list-style none
@@ -137,6 +141,28 @@
 	&-redImg
 		margin 0 10px
 		vertical-align middle
+		
+/*Controles Owl Galeria*/
+
+
+#sync2.owl-carousel .owl-controls .owl-buttons .owl-prev
+#sync2.owl-carousel .owl-controls .owl-buttons .owl-next
+	position absolute
+	top 35%
+	font-size 1.7em
+	display inline-block
+	width 14px
+	height 36px
+
+
+#sync2.owl-carousel .owl-controls .owl-buttons .owl-prev
+	left 0
+	background url('../images/02-interna/flecha-izq-owl.png') no-repeat center
+
+#sync2.owl-carousel .owl-controls .owl-buttons .owl-next
+	right 0
+	background url('../images/02-interna/flecha-der-owl.png') no-repeat center
+
 		
 @media screen and (min-width:700px)
 	.Int
